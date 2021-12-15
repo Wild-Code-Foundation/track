@@ -1,3 +1,47 @@
+# Wild Code Track
+A very simple visualisation tool for conservation managers to view their sensors on a map. Integrate any provider so 
+park management can view it on a single page. LoRaWAN, Sat, GSM, AWT, ACT, Savanna, SpiderTracks, etc etc. Not limited to any kind of sensor or any provider.
+
+[https://track.wildcodefoundation.org/](https://track.wildcodefoundation.org/)
+
+## Features
+### Add sensor
+Simnple way to add new sensor. Only needs UID.
+
+### Search sensors
+
+### Create groups for sensors
+Sensors can be grouped
+
+### Add users
+Add users that can also view your data
+
+### USers to see sensors/groups 
+Give users rights to view only certain groups or all
+
+### Set home location
+Set  home location where default map is loaded with set location and zoom level
+
+### Draw boundaries
+Simple drawing of shapes, park boundaries etc
+Import files such as GeoJSON to draw boundary
+
+### Draw geofences
+Same as above but for geofences
+Import files such as GeoJSON to draw boundary
+
+### Alerts
+Set alerts for sensors, example breaking geofence, battery low, threashold lows (IF THIS THEN THAT)
+
+## Architecture
+ReactJS frontend
+Hasura backend
+NodeRED for integrations and "API"
+API needs token to allow updating sensor.
+
+Docker Compose Complete setup if someone wants to self host.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
